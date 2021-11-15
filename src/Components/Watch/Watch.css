@@ -1,0 +1,30 @@
+.watch-movie-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  animation: fadeIn 0.5s linear;
+}
+
+.watch-movie {
+  width: 80%;
+}
+
+.simularMovie {
+  width: 15%;
+}
+
+.movie-name {
+  color: #fff;
+  margin: 20px 0;
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.movie-overview {
+  color: #fff;
+}
+
+.movie-release_date {
+  color: #fff;
+  margin: 20px 0;
+}

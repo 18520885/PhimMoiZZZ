@@ -1,0 +1,25 @@
+.cast {
+  padding-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(224px, 1fr));
+  grid-gap: 40px 20px;
+}
+
+.cast-title {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 400;
+  margin-top: 40px;
+}
+
+.cast-item img {
+  border-radius: 8px;
+}
+
+.cast-name {
+  color: #fff;
+}
+
+.cast-character {
+  color: #f1c40f;
+}
