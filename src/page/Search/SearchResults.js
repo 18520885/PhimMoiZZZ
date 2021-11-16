@@ -12,7 +12,13 @@ function SearchResults() {
 
   const [page, setPage] = useState(1);
 
+  const [totalPage, setTotalPage] = useState();
+
   const [loading, setLoading] = useState(true);
+
+  const LoadMore = () => {
+    setPage(page + 1);
+  };
 
   useEffect(() => {
     const searchKeywordforUser = (keyword) => {
@@ -21,6 +27,7 @@ function SearchResults() {
       )
         .then((res) => res.json())
         .then((data) => {
+          setTotalPage(data.total_pages);
           setResults([...results, ...data.results]);
           setLoading(false);
         })
@@ -35,9 +42,7 @@ function SearchResults() {
   return (
     <div className="container">
       <div className="searchResults">
-        <h1 className="searchResults-title">
-          Results for {`"${keyword}"`} {`(${results.length} result)`}
-        </h1>
+        <h1 className="searchResults-title">Results for {`"${keyword}"`}</h1>
         <div className="searchResults-container">
           {!loading ? (
             results.map((result) => (
@@ -76,6 +81,11 @@ function SearchResults() {
           )}
         </div>
       </div>
+      {page < totalPage ? (
+        <div onClick={LoadMore} className="load-more">
+          <button className="load-more-button">Load More</button>
+        </div>
+      ) : null}
     </div>
   );
 }

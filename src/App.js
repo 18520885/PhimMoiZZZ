@@ -20,7 +20,10 @@ function App() {
           <Route path="/results/:keyword" element={<SearchResults />} />
           <Route path="/:media_type/:type" element={<ViewMorePage />} />
           <Route path="/details/:media_type/:id" element={<DetailsMovie />} />
-          <Route path="/watch/tv/:id" element={<WatchTv />} />
+          <Route
+            path="/watch/tv/:id/season/:season/esp/:esp"
+            element={<WatchTv />}
+          />
           <Route path="/watch/movie/:id" element={<WatchMovie />} />
         </Routes>
       </div>

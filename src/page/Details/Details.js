@@ -89,7 +89,7 @@ function DetailsMovie() {
                   className="watch-link"
                   to={
                     media_type === "tv"
-                      ? `/watch/tv/${id}`
+                      ? `/watch/tv/${id}/season/1/esp/1`
                       : `/watch/movie/${id}`
                   }
                 >

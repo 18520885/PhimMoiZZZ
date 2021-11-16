@@ -30,8 +30,7 @@ function WatchMovie() {
             src={`https://www.2embed.ru/embed/tmdb/movie?id=${id}`}
             title="Movie player"
             frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
+            allowFullScreen
           />
           <h1 className="movie-name">{info.title}</h1>
           <p className="movie-overview">{info.overview}</p>

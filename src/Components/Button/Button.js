@@ -2,7 +2,7 @@ import React from "react";
 import "./Button.css";
 
 function Button({ content }) {
-  return <div className="btn">{content}</div>;
+  return <span className="btn">{content}</span>;
 }
 
 export default Button;

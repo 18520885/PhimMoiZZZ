@@ -26,22 +26,9 @@ function ViewMorePage() {
     });
   };
 
-  useEffect(() => {
-    const scrollToBottom = () => {
-      if (
-        parseInt(window.innerHeight + document.documentElement.scrollTop) ===
-        parseInt(document.documentElement.offsetHeight)
-      ) {
-        setPage(page + 1);
-      }
-    };
-
-    window.addEventListener("scroll", scrollToBottom);
-
-    return () => {
-      window.removeEventListener("scroll", scrollToBottom);
-    };
-  }, []);
+  const LoadMore = () => {
+    setPage(page + 1);
+  };
 
   useEffect(() => {
     const getViewMore = (media_type, type) => {
@@ -110,6 +97,10 @@ function ViewMorePage() {
         {loading ? (
           <div className="loading-container">
             <div className="loader"></div>
+          </div>
+        ) : page < totalPage ? (
+          <div onClick={LoadMore} className="load-more">
+            <button className="load-more-button">Load More</button>
           </div>
         ) : null}
       </div>

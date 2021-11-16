@@ -2,7 +2,7 @@
 
 img {
   width: 100%;
-  height: auto;
+  height: 350px;
   object-fit: cover;
 }
 
@@ -43,4 +43,46 @@ body {
   to {
     transform: translateY(0%);
   }
+}
+
+.load-more {
+  text-align: center;
+  margin: 30px;
+}
+
+.load-more-button {
+  padding: 8px;
+  border-radius: 5px;
+  background-color: #e74c3c;
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.3s linear;
+}
+
+.load-more-button:hover {
+  background-color: #f3f3f3;
+  color: #333;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
