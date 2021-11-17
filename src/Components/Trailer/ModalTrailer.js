@@ -24,15 +24,17 @@ function ModalTrailer({ show, setShow }) {
   }, []);
 
   return (
-    <div
-      className="overlay"
-      style={{ display: show ? "flex" : "none" }}
-      onClick={() => {
-        setShow(false);
-      }}
-    >
+    <div className="overlay" style={{ display: show ? "flex" : "none" }}>
       <div className="trailer-container">
-        <h1 className="trailer-title">{media_type} trailers</h1>
+        <div className="trailer-title-close">
+          <h1 className="trailer-title">{media_type} trailers</h1>
+          <box-icon
+            onClick={() => setShow(false)}
+            color="white"
+            size="md"
+            name="x-circle"
+          ></box-icon>
+        </div>
 
         <div className="trailer-content">
           {!trailers ? (
@@ -49,7 +51,6 @@ function ModalTrailer({ show, setShow }) {
                   src={`https://www.youtube.com/embed/${trailer.key}`}
                   title="YouTube video player"
                   frameBorder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowFullscreen
                 />
               </>

@@ -17,8 +17,12 @@ a {
 }
 
 body {
-  background-color: #2d3436;
+  background-color: #333;
   font-family: "Poppins", sans-serif;
+}
+
+.App {
+  overflow: hidden;
 }
 
 .container {

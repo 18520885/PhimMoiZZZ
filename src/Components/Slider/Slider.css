@@ -43,12 +43,12 @@
 .movie-title {
   font-size: 12px;
   height: 50px;
-  background-color: #fff;
-  font-weight: 600;
+  background-color: #222;
+  font-weight: 500;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
   padding: 0.5rem;
   overflow: hidden;
   text-overflow: ellipsis;
-  color: #333;
+  color: #fff;
 }
