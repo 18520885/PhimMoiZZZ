@@ -26,7 +26,7 @@ const SliderMovie = ({ type }) => {
   if (width >= 1024) {
     item = 5;
   } else if (width < 1024 && width >= 740) {
-    item = 4;
+    item = 3;
   } else if (width < 740 && width >= 500) {
     item = 2;
   } else {

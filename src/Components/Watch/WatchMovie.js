@@ -26,10 +26,9 @@ function WatchMovie() {
         <div className="watch-movie">
           <iframe
             width="100%"
-            height="600"
             src={`https://www.2embed.ru/embed/tmdb/movie?id=${id}`}
             title="Movie player"
-            frameborder="0"
+            frameBorder="0"
             allowFullScreen
           />
           <h1 className="movie-name">{info.title}</h1>

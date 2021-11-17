@@ -3,6 +3,7 @@
   justify-content: space-between;
   margin-top: 30px;
   animation: fadeIn 0.5s linear;
+  flex-wrap: wrap;
 }
 
 .watch-movie {
@@ -33,6 +34,7 @@
   display: flex;
   margin-top: 30px;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .watch-tv {
@@ -53,6 +55,10 @@
   cursor: pointer;
 }
 
+.watch-tv-link:last-child {
+  margin-bottom: 0px;
+}
+
 .watch-tv-season-img {
   height: 100%;
   width: 50%;
@@ -70,6 +76,10 @@
   display: flex;
   justify-content: space-between;
   flex-direction: column;
+}
+
+.esp {
+  transition: height linear 1s;
 }
 
 .esp-list {
@@ -102,4 +112,22 @@
   height: 100%;
   padding: 5px;
   width: 50%;
+}
+
+.watch-tv h1 {
+  color: #fff;
+  font-weight: 400;
+  font-size: 30px;
+  margin: 10px 0;
+}
+
+.watch-tv p {
+  color: #fff;
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.watch-tv-iframe {
+  width: 100%;
+  height: 600px;
 }

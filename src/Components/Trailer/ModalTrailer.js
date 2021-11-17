@@ -42,14 +42,16 @@ function ModalTrailer({ show, setShow }) {
               <>
                 <h1 className="trailer-name">{trailer.name}</h1>
                 <iframe
-                  width="460"
-                  height="315"
+                  style={{
+                    height: "315px",
+                  }}
+                  width="100%"
                   src={`https://www.youtube.com/embed/${trailer.key}`}
                   title="YouTube video player"
-                  frameborder="0"
+                  frameBorder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowfullscreen
-                ></iframe>
+                  allowFullscreen
+                />
               </>
             ))
           )}
