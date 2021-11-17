@@ -35,10 +35,3 @@
   color: #fff;
   margin: 10px 0;
 }
-
-iframe {
-  height: 315px;
-  width: 100%;
-  margin: 0 auto;
-  max-width: calc(100% - 32px);
-}
